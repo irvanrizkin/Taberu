@@ -37,3 +37,6 @@ To make easy interaction between layout and logic
 ### Login Activity
 - login_button_daftar
 - login_edittext_email
+
+### Splash Activity
+- splash_button_mulai
