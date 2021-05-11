@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/hitammuda"
-    tools:context=".splashactivity">
+    tools:context=".splashActivity">
 
     <ImageView
         android:id="@+id/splash_imageview_circle1"
@@ -15,7 +15,7 @@
         android:layout_marginBottom="720.5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/lingkaran" />
+        app:srcCompat="@drawable/splash_hiasan1" />
 
     <ImageView
         android:id="@+id/splash_imageview_circle3"
@@ -25,7 +25,7 @@
         android:layout_marginTop="34dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lingkaran2" />
+        app:srcCompat="@drawable/splash_logo" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -38,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lingkaran3" />
+        app:srcCompat="@drawable/splash_hiasan2" />
 
     <TextView
         android:id="@+id/splash_textview_taberu"
