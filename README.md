@@ -40,3 +40,14 @@ To make easy interaction between layout and logic
 
 ### Splash Activity
 - splash_button_mulai
+
+### Register Activity
+- register_edittext_email
+- register_edittext_password
+- register_imageview_seepassword
+- register_edittext_namalengkap
+- register_edittext_namapanggilan
+- register_edittext_jeniskelamin
+- register_edittext_notelepon
+- register_button_daftar
+- register_imageview_backbutton
