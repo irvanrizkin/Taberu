@@ -35,8 +35,12 @@ Keep it simple but meaningful
 ## View Naming
 To make easy interaction between layout and logic
 ### Login Activity
-- login_button_daftar
+- login_button_login
 - login_edittext_email
+- login_edittext_password
+- login_imageview_backbutton
+- login_imageview_hiasan1
+- login_textview_forgotpassword
 
 ### Splash Activity
 - splash_button_mulai
@@ -51,3 +55,5 @@ To make easy interaction between layout and logic
 - register_edittext_notelepon
 - register_button_daftar
 - register_imageview_backbutton
+
+
