@@ -50,3 +50,4 @@ To make easy interaction between layout and logic
 - register_edittext_jeniskelamin
 - register_edittext_notelepon
 - register_button_daftar
+- register_imageview_backbutton
