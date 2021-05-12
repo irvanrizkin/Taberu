@@ -91,6 +91,7 @@
         android:background="@drawable/button"
         android:fontFamily="@font/poppins_bold"
         android:text="MULAI"
+        android:textColor="#FFFFFF"
         app:backgroundTint="@color/hitammuda"
         app:iconTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
