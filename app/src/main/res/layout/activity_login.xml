@@ -17,7 +17,9 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="27.45dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:onClick="pindahsplashactivity"/>
 
     <ImageView
         android:id="@+id/login_imageview_hiasan1"
@@ -29,7 +31,7 @@
         android:layout_marginBottom="163dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -87,7 +89,7 @@
         android:ems="10"
         android:fontFamily="@font/poppins_bold"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="18dp"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -115,7 +117,8 @@
         android:textColor="#CACACA"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_imageview_seepassword" />
+        app:layout_constraintTop_toBottomOf="@+id/login_imageview_seepassword"
+        android:clickable="true"/>
 
     <Button
         android:id="@+id/login_button_login"
@@ -129,4 +132,32 @@
         android:text="Login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_edittext_password" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Belum Punya Akun?"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_login" />
+
+    <TextView
+        android:id="@+id/register_textview_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_login"
+        android:clickable="true"
+        android:onClick="pindahregisteractivity"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

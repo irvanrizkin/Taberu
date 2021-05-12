@@ -17,7 +17,9 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="27.45dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:onClick="pindahsplashactivity"/>
 
     <TextView
         android:id="@+id/addreview_textview_nilairestoran"
@@ -33,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/addreview_imageview_hiasan"
+        android:id="@+id/imageView2"
         android:layout_width="721dp"
         android:layout_height="434dp"
         android:layout_marginStart="183dp"
