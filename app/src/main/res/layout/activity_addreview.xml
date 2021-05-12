@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hitammuda"
+    tools:context=".AddreviewActivity">
+
+    <ImageView
+        android:id="@+id/addreview_imageview_backbutton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/backbuttonblack"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="102dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="27.45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:onClick="pindahsplashactivity"/>
+
+    <TextView
+        android:id="@+id/addreview_textview_nilairestoran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="NILAI RESTORAN"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="721dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="586dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="197dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205"
+        app:srcCompat="@drawable/addreview_hiasan1" />
+
+    <EditText
+        android:id="@+id/addreview_edittext_masukkanreview"
+        android:layout_width="339dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/addreview_rectangle"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="top"
+        android:hint="Masukkan Review..."
+        android:inputType="textPersonName"
+        android:paddingLeft="18dp"
+        android:paddingTop="35dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="18dp"
+        android:textColor="#606060"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addreview_textview_nilairestoran" />
+
+    <ImageView
+        android:id="@+id/addreview_imageview_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintEnd_toEndOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintTop_toTopOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/addreview_plus" />
+
+    <ImageView
+        android:id="@+id/addreview_imageview_fotoprofil"
+        android:layout_width="59.46dp"
+        android:layout_height="59.46dp"
+        android:layout_marginStart="15.09dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="264.46dp"
+        android:layout_marginBottom="127.54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintEnd_toEndOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintTop_toTopOf="@+id/addreview_edittext_masukkanreview"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fotoprofil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

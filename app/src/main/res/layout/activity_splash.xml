@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hitammuda"
+    tools:context=".splashActivity">
+
+    <ImageView
+        android:id="@+id/splash_imageview_circle1"
+        android:layout_width="128.5dp"
+        android:layout_height="133.5dp"
+        android:layout_marginEnd="316.5dp"
+        android:layout_marginBottom="720.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/splash_hiasan1" />
+
+    <ImageView
+        android:id="@+id/splash_imageview_circle3"
+        android:layout_width="460dp"
+        android:layout_height="456dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_logo" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="463dp"
+        android:layout_height="538dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="476dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_hiasan2" />
+
+    <TextView
+        android:id="@+id/splash_textview_taberu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="113dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="TABERU"
+        android:textAlignment="center"
+        android:textColor="@color/hitammuda"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/splash_textview_japan"
+        android:layout_width="54dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="208dp"
+        android:fontFamily="@font/poppins"
+        android:text="たべる"
+        android:textAlignment="center"
+        android:textColor="@color/hitammuda"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/splash_textview_taberu" />
+
+    <TextView
+        android:id="@+id/splash_textview_temukan"
+        android:layout_width="248dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Temukan Restoran favoritmu!"
+        android:textAlignment="center"
+        android:textColor="@color/hitammuda"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/splash_textview_taberu" />
+
+    <Button
+        android:id="@+id/splash_button_mulai"
+        android:layout_width="186dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="135dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppins_bold"
+        android:text="MULAI"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/hitammuda"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/splash_textview_temukan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
