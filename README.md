@@ -56,4 +56,8 @@ To make easy interaction between layout and logic
 - register_button_daftar
 - register_imageview_backbutton
 
-
+### Addreview Activity
+- addreview_imageview_backbutton
+- addreview_imageview_fotoprofil
+- addreview_edittext_masukkanreview
+- addreview_imageview_plus
