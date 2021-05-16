@@ -61,3 +61,10 @@ To make easy interaction between layout and logic
 - addreview_imageview_fotoprofil
 - addreview_edittext_masukkanreview
 - addreview_imageview_plus
+
+### CardView Home
+- cardhome_imageview_picture
+- cardhome_edittext_title
+- cardhome_edittext_location
+- cardhome_edittext_desc
+- cardhomr_ratingbar_rating
