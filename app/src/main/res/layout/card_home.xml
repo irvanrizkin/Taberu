@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/cardhome_imageview_picture"
+            android:layout_width="175dp"
+            android:layout_height="149dp"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/cardhome_edittext_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pondok Bambu"
+            android:textColor="@color/black"
+            card_view:layout_constraintStart_toEndOf="@+id/cardhome_imageview_picture"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cardhome_edittext_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kraksaan"
+            android:textColor="@color/hitamagakmuda"
+            android:textSize="12sp"
+            card_view:layout_constraintStart_toEndOf="@+id/cardhome_imageview_picture"
+            card_view:layout_constraintTop_toBottomOf="@+id/cardhome_edittext_title" />
+
+        <TextView
+            android:id="@+id/cardhome_edittext_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Pondok bambu adalah restoran bergaya tradisional yang menyajikan ikan sebagai menu utamanya"
+            android:textSize="9sp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="1.0"
+            card_view:layout_constraintStart_toEndOf="@+id/cardhome_imageview_picture"
+            card_view:layout_constraintTop_toBottomOf="@+id/cardhome_edittext_location" />
+
+        <RatingBar
+            android:id="@+id/cardhome_ratingbar_rating"
+            style="@android:style/Widget.Material.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:numStars="5"
+            android:progressTint="@color/yellowstar"
+            android:rating="3"
+            android:secondaryProgressTint="@android:color/transparent"
+            android:stepSize="0.5"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/cardhome_imageview_picture" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
