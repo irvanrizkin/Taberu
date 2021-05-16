@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".AddreviewActivity"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".AddreviewActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" /> <!-- <activity android:name=".splashactivity"></activity> -->
         <activity android:name=".splashActivity">
