@@ -68,3 +68,11 @@ To make easy interaction between layout and logic
 - cardhome_edittext_location
 - cardhome_edittext_desc
 - cardhomr_ratingbar_rating
+
+### Home 
+- home_imageview_fotoprofile
+- home_imageview_morebutton
+- home_recyclerview_recyclerview
+- home_texttview_namautama
+- home_edittext_level
+- home_textview_employee
