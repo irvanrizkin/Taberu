@@ -8,7 +8,7 @@
     tools:context=".AddreviewActivity">
 
     <ImageView
-        android:id="@+id/addreview_imageview_backbutton"
+        android:id="@+id/restaurantdetail_imageview_backbutton"
         android:layout_width="45dp"
         android:layout_height="45dp"
         app:srcCompat="@drawable/backbuttonblack"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/addreview_textview_nilairestoran" />
 
     <ImageView
-        android:id="@+id/addreview_imageview_plus"
+        android:id="@+id/restaurantdetail_imageview_plus"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="308dp"

@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/fotohiasan" />
 
     <ImageView
-        android:id="@+id/addreview_imageview_backbutton"
+        android:id="@+id/restaurantdetail_imageview_backbutton"
         android:layout_width="45dp"
         android:layout_height="45dp"
         app:srcCompat="@drawable/backbuttonblack"
@@ -34,7 +34,7 @@
         android:onClick="pindahsplashactivity"/>
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/restaurantdetail_imageview_bigcard"
         android:layout_width="330dp"
         android:layout_height="340dp"
         android:layout_marginStart="40dp"
@@ -47,42 +47,55 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/restaurantdetail_textview_Jakarta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Jakarta"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/restaurantdetail_imageview_bigcard"
+        app:layout_constraintTop_toTopOf="@+id/restaurantdetail_imageview_bigcard" />
+
+    <TextView
+        android:id="@+id/restaurantdetail_textview_Yoshinoya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Yoshinoya"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        app:layout_constraintStart_toStartOf="@+id/restaurantdetail_imageview_bigcard"
+        app:layout_constraintTop_toTopOf="@+id/restaurantdetail_imageview_bigcard" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/restaurantdetail_imageview_starbulet"
         android:layout_width="75dp"
         android:layout_height="30dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="28dp"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/restaurantdetail_textview_Yoshinoya"
+        app:layout_constraintTop_toTopOf="@+id/restaurantdetail_imageview_bigcard"
         app:srcCompat="@drawable/kotakputihkecil" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/restaurantdetail_imageview_star"
         android:layout_width="19.58dp"
         android:layout_height="18.36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintStart_toStartOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintBottom_toBottomOf="@+id/restaurantdetail_imageview_starbulet"
+        app:layout_constraintStart_toStartOf="@+id/restaurantdetail_imageview_starbulet"
+        app:layout_constraintTop_toTopOf="@+id/restaurantdetail_imageview_starbulet"
         app:srcCompat="@drawable/bintang" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/restaurantdetail_textview_star"
         android:layout_width="36dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -91,9 +104,49 @@
         android:fontFamily="@font/poppins_medium"
         android:text="3.5 Star"
         android:textSize="9sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+        app:layout_constraintBottom_toBottomOf="@+id/restaurantdetail_imageview_starbulet"
+        app:layout_constraintStart_toEndOf="@+id/restaurantdetail_imageview_star"
+        app:layout_constraintTop_toTopOf="@+id/restaurantdetail_imageview_starbulet" />
+
+    <TextView
+        android:id="@+id/restaurantdetail_textview_longtext"
+        android:layout_width="294dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet."
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="@+id/restaurantdetail_imageview_bigcard"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantdetail_textview_Jakarta" />
+
+    <ImageView
+        android:id="@+id/restaurantdetail_imageview_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="735dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addreview_plus" />
+
+    <TextView
+        android:id="@+id/restaurantdetail_textview_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Review"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantdetail_imageview_bigcard" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
