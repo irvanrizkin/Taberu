@@ -76,3 +76,15 @@ To make easy interaction between layout and logic
 - home_texttview_namautama
 - home_edittext_level
 - home_textview_employee
+
+### restaurant Detail
+- restaurantdetail_imageview_backbutton
+- restaurantdetail_textview_Yoshinoya
+- restaurantdetail_textview_Jakarta
+- restaurantdetail_textview_longtext
+- restaurantdetail_imageview_star
+- restaurantdetail_textview_star
+- restaurantdetail_imageview_starbulet
+- restaurantdetail_imageview_bigcard
+- restaurantdetail_textview_review
+- restaurantdetail_imageview_plus
