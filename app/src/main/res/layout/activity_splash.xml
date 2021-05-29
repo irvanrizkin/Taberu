@@ -4,97 +4,204 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/hitammuda"
+    android:background="@color/birumuda"
     tools:context=".splashActivity">
 
     <ImageView
-        android:id="@+id/splash_imageview_circle1"
-        android:layout_width="128.5dp"
-        android:layout_height="133.5dp"
-        android:layout_marginEnd="316.5dp"
-        android:layout_marginBottom="720.5dp"
+        android:id="@+id/imageView6"
+        android:layout_width="544dp"
+        android:layout_height="544dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="416dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/circle1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="544dp"
+        android:layout_height="544dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="408dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash_circle2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="544dp"
+        android:layout_height="544dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="397dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash_circle2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="473dp"
+        android:layout_height="473dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle1" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="473dp"
+        android:layout_height="473dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="537dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_circle2" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="473dp"
+        android:layout_height="473dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_circle2" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="463dp"
+        android:layout_height="237.5dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_circle3" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_circle4" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="511dp"
+        android:layout_height="511dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="705dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/splash_hiasan1" />
 
     <ImageView
-        android:id="@+id/splash_imageview_circle3"
-        android:layout_width="460dp"
-        android:layout_height="456dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="34dp"
+        android:id="@+id/splash_imageView_logo"
+        android:layout_width="223dp"
+        android:layout_height="244.18dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="82dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/splash_logo" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="463dp"
-        android:layout_height="538dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="476dp"
-        android:layout_marginEnd="23dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splash_hiasan2" />
-
     <TextView
         android:id="@+id/splash_textview_taberu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="113dp"
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="62dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="たべる"
+        android:textAlignment="center"
+        android:textColor="#1E1D22"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/splash_textview_taberu2"
+        android:layout_width="107dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="196dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="TABERU"
         android:textAlignment="center"
-        android:textColor="@color/hitammuda"
+        android:textColor="#1E1D22"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/splash_textview_japan"
         android:layout_width="54dp"
         android:layout_height="27dp"
-        android:layout_marginStart="208dp"
-        android:fontFamily="@font/poppins"
+        android:layout_marginStart="179dp"
         android:text="たべる"
-        android:textAlignment="center"
-        android:textColor="@color/hitammuda"
+        android:textColor="#25242A"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/splash_textview_taberu" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_textview_taberu2" />
 
     <TextView
         android:id="@+id/splash_textview_temukan"
         android:layout_width="248dp"
         android:layout_height="21dp"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="148dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Temukan Restoran favoritmu!"
+        android:text="Temukan Restoran Favoritmu!"
         android:textAlignment="center"
-        android:textColor="@color/hitammuda"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/splash_textview_taberu" />
+        android:textColor="#212B3F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginBottom="77.2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash_rectangle" />
 
     <Button
         android:id="@+id/splash_button_mulai"
         android:layout_width="186dp"
         android:layout_height="50dp"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="135dp"
-        android:background="@drawable/button"
+        android:layout_marginStart="113dp"
+        android:layout_marginBottom="87dp"
+        android:background="@drawable/splash_button"
         android:fontFamily="@font/poppins_bold"
-        android:text="MULAI"
-        android:textColor="#FFFFFF"
-        app:backgroundTint="@color/hitammuda"
-        app:iconTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/splash_textview_temukan" />
+        android:text="MULAI!"
+        android:textColor="#E9F5DB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

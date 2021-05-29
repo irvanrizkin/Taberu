@@ -4,80 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/hitammuda"
+    android:background="@color/birumuda"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="411dp"
+        android:layout_height="267dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_rectangle" />
 
     <ImageView
         android:id="@+id/restaurantdetail_imageview_backbutton"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        app:srcCompat="@drawable/backbuttonblack"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="102dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="27.45dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:clickable="true"
-        android:onClick="pindahsplashactivity"/>
-
-    <ImageView
-        android:id="@+id/login_imageview_hiasan1"
-        android:layout_width="610.57dp"
-        android:layout_height="708.87dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="278.01dp"
-        android:layout_marginEnd="158.57dp"
-        android:layout_marginBottom="163dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
+        android:onClick="pindahsplashactivity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/login_hiasan1" />
+        app:srcCompat="@drawable/backbuttonwhite" />
 
     <TextView
-        android:id="@+id/login_textview_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/login_textview_selamatdatang"
+        android:layout_width="210dp"
+        android:layout_height="72dp"
         android:layout_marginStart="62dp"
         android:layout_marginTop="156dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Login"
-        android:textColor="#FFFFFF"
+        android:text="Selamat datang kembali!"
+        android:textAlignment="viewStart"
+        android:textColor="#1F293B"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/login_textview_subjudul"
-        android:layout_width="237dp"
-        android:layout_height="62dp"
+        android:id="@+id/login_textView_loginuntukmelanjutkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Masukkan data diri Anda Sesuai dengan data Anda sebenarnya."
-        android:textColor="#CACACA"
-        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Login Untuk Melanjutkan"
+        android:textColor="#1F293B"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_textview_login" />
+        app:layout_constraintTop_toBottomOf="@+id/login_textview_selamatdatang" />
 
     <EditText
         android:id="@+id/login_edittext_email"
-        android:layout_width="287dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="62dp"
-        android:layout_marginTop="66dp"
-        android:background="@drawable/edittext"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/login_edittext"
         android:ems="10"
         android:fontFamily="@font/poppins_bold"
         android:hint="Email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:paddingLeft="18dp"
-        android:textColor="#FFFFFF"
+        android:paddingTop="15dp"
+        android:paddingBottom="14dp"
+        android:textColor="#CACACA"
+        android:textColorHint="#CACACA"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_textview_subjudul" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/login_edittext_password"
@@ -85,79 +79,82 @@
         android:layout_height="50dp"
         android:layout_marginStart="62dp"
         android:layout_marginTop="21dp"
-        android:background="@drawable/edittext"
+        android:background="@drawable/login_edittext"
         android:ems="10"
         android:fontFamily="@font/poppins_bold"
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="18dp"
-        android:textColor="#FFFFFF"
+        android:paddingTop="15dp"
+        android:paddingBottom="14dp"
+        android:textColor="#CACACA"
+        android:textColorHint="#CACACA"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_edittext_email" />
 
     <ImageView
         android:id="@+id/login_imageview_seepassword"
-        android:layout_width="53dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="21dp"
         app:layout_constraintStart_toEndOf="@+id/login_edittext_password"
         app:layout_constraintTop_toBottomOf="@+id/login_edittext_email"
-        app:srcCompat="@drawable/seepassword" />
+        app:srcCompat="@drawable/see_password" />
 
     <TextView
         android:id="@+id/login_textview_forgotpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="242dp"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="3dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Forgot Password?"
         android:textColor="#CACACA"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_imageview_seepassword"
-        android:clickable="true"/>
+        app:layout_constraintTop_toBottomOf="@+id/login_edittext_password" />
 
     <Button
         android:id="@+id/login_button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="113dp"
-        android:layout_marginTop="65dp"
-        android:background="@drawable/button"
-        android:backgroundTint="@color/white"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="275dp"
+        android:background="@drawable/edittext"
         android:fontFamily="@font/poppins_bold"
-        android:text="Login"
+        android:text="login"
+        android:textColor="#212B3F"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_edittext_password" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="11dp"
+        android:id="@+id/login_textview_belumpunyaakun"
+        android:layout_width="128dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="12dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Belum Punya Akun?"
-        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#E9F5DB"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button_login" />
+        app:layout_constraintBottom_toTopOf="@+id/login_button_login"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/register_textview_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="11dp"
-        android:fontFamily="@font/poppins_bold"
+        android:id="@+id/login_textview_daftar"
+        android:layout_width="47dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Daftar"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/login_button_login"
         android:clickable="true"
-        android:onClick="pindahregisteractivity"/>
+        android:onClick="pindahregisteractivity"
+        app:layout_constraintBottom_toTopOf="@+id/login_button_login"
+        app:layout_constraintStart_toEndOf="@+id/login_textview_belumpunyaakun" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
