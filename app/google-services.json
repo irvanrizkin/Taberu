@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1084450104871",
+    "project_id": "taberu-e5121",
+    "storage_bucket": "taberu-e5121.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084450104871:android:507f32af88160d02669002",
+        "android_client_info": {
+          "package_name": "com.example.taberu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084450104871-564mnojrp3qmp9ek5pc3m4kl4ae0407s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACBDqVf01HJqwA4DXUk038rAV1K9IySpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084450104871-564mnojrp3qmp9ek5pc3m4kl4ae0407s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
