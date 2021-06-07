@@ -29,8 +29,7 @@
         android:layout_marginTop="27.45dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:clickable="true"
-        android:onClick="pindahsplashactivity"/>
+        android:clickable="true"/>
 
     <TextView
         android:id="@+id/restaurantdetail_textview_review"
