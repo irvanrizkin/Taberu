@@ -140,7 +140,7 @@
         android:layout_marginStart="14dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Aku suka Restorannya <3"
+        android:text="Aku suka Restorannya"
         android:textColor="#212B3F"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
