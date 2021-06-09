@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RegisterActivity extends AppCompatActivity {
     Button registerButton;
     EditText emailText, passwordText, fullNameText, nickNameText, phoneNumberText;
+    ImageView backImage;
     String nickName;
     TextView loginLink;
     FirebaseAuth firebaseAuth;
@@ -48,12 +50,14 @@ public class RegisterActivity extends AppCompatActivity {
         fullNameText = findViewById(R.id.register_edittext_namalengkap);
         nickNameText = findViewById(R.id.register_edittext_namapanggilan);
         phoneNumberText = findViewById(R.id.register_edittext_notelepon);
+        backImage = findViewById(R.id.register_imageview_backbutton);
     }
 
     // On Click
     private void setOnClick() {
         loginLink.setOnClickListener(loginIntentListener);
         registerButton.setOnClickListener(registerListener);
+        backImage.setOnClickListener(backIntent);
     }
 
     private View.OnClickListener loginIntentListener = new View.OnClickListener() {
@@ -76,6 +80,13 @@ public class RegisterActivity extends AppCompatActivity {
 
             User user = new User(email, fullName, nickName, phoneNumber);
             insertData(user);
+        }
+    };
+
+    private View.OnClickListener backIntent = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
         }
     };
 

@@ -8,7 +8,7 @@
     tools:context=".AddreviewActivity">
 
     <ImageView
-        android:id="@+id/restaurantdetail_imageview_backbutton"
+        android:id="@+id/login_imageview_backbutton"
         android:layout_width="45dp"
         android:layout_height="45dp"
         app:srcCompat="@drawable/backbuttonblack"
@@ -81,7 +81,7 @@
         android:layout_marginStart="0.46dp"
         android:layout_marginBottom="2dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Irvan"
+        android:text="Guest"
         android:textColor=" #E2E3E6"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/addreview_edittext_masukkanreview"
@@ -101,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/addreview_edittext_masukkanreview" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/template0"
         android:layout_width="91dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
@@ -120,16 +120,16 @@
         android:text="Bagus Sekali"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="@+id/template0"
+        app:layout_constraintTop_toTopOf="@+id/template0" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/template1"
         android:layout_width="157dp"
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/template0"
         app:layout_constraintTop_toBottomOf="@+id/addreview_edittext_masukkanreview"
         app:srcCompat="@drawable/addreview_rectangle3" />
 
@@ -143,16 +143,16 @@
         android:text="Aku suka Restorannya"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView25"
-        app:layout_constraintTop_toTopOf="@+id/imageView25" />
+        app:layout_constraintStart_toStartOf="@+id/template1"
+        app:layout_constraintTop_toTopOf="@+id/template1" />
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/template2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView25"
+        app:layout_constraintStart_toEndOf="@+id/template1"
         app:layout_constraintTop_toBottomOf="@+id/addreview_edittext_masukkanreview"
         app:srcCompat="@drawable/addreview_rectangle4" />
 
@@ -166,17 +166,17 @@
         android:text="OK"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView26"
-        app:layout_constraintTop_toTopOf="@+id/imageView26" />
+        app:layout_constraintStart_toStartOf="@+id/template2"
+        app:layout_constraintTop_toTopOf="@+id/template2" />
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/template3"
         android:layout_width="91dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/template0"
         app:srcCompat="@drawable/addreview_rectangle2" />
 
     <TextView
@@ -189,17 +189,17 @@
         android:text="Suka Banget"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView27"
-        app:layout_constraintTop_toTopOf="@+id/imageView27" />
+        app:layout_constraintStart_toStartOf="@+id/template3"
+        app:layout_constraintTop_toTopOf="@+id/template3" />
 
     <ImageView
-        android:id="@+id/imageView29"
+        android:id="@+id/template4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView27"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintStart_toEndOf="@+id/template3"
+        app:layout_constraintTop_toBottomOf="@+id/template1"
         app:srcCompat="@drawable/addreview_rectangle2" />
 
     <TextView
@@ -212,17 +212,17 @@
         android:text="Underrated"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView29"
-        app:layout_constraintTop_toTopOf="@+id/imageView29" />
+        app:layout_constraintStart_toStartOf="@+id/template4"
+        app:layout_constraintTop_toTopOf="@+id/template4" />
 
     <ImageView
-        android:id="@+id/imageView30"
+        android:id="@+id/template5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView29"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:layout_constraintStart_toEndOf="@+id/template4"
+        app:layout_constraintTop_toBottomOf="@+id/template2"
         app:srcCompat="@drawable/addreview_rectangle5" />
 
     <TextView
@@ -235,17 +235,17 @@
         android:text="Terlalu Keren"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView30"
-        app:layout_constraintTop_toTopOf="@+id/imageView30" />
+        app:layout_constraintStart_toStartOf="@+id/template5"
+        app:layout_constraintTop_toTopOf="@+id/template5" />
 
     <ImageView
-        android:id="@+id/imageView31"
+        android:id="@+id/template6"
         android:layout_width="126dp"
         android:layout_height="40dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27"
+        app:layout_constraintTop_toBottomOf="@+id/template3"
         app:srcCompat="@drawable/addreview_rectangle6" />
 
     <TextView
@@ -257,18 +257,18 @@
         android:text="Bakal Balik Lagi Sih ini"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView31"
-        app:layout_constraintStart_toStartOf="@+id/imageView31"
-        app:layout_constraintTop_toTopOf="@+id/imageView31" />
+        app:layout_constraintEnd_toEndOf="@+id/template6"
+        app:layout_constraintStart_toStartOf="@+id/template6"
+        app:layout_constraintTop_toTopOf="@+id/template6" />
 
     <ImageView
-        android:id="@+id/imageView32"
+        android:id="@+id/template7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView31"
-        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        app:layout_constraintStart_toEndOf="@+id/template6"
+        app:layout_constraintTop_toBottomOf="@+id/template5"
         app:srcCompat="@drawable/addreview_rectangle6" />
 
     <TextView
@@ -281,17 +281,17 @@
         android:text="Aku Suka"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView32"
-        app:layout_constraintStart_toStartOf="@+id/imageView32" />
+        app:layout_constraintBottom_toBottomOf="@+id/template7"
+        app:layout_constraintStart_toStartOf="@+id/template7" />
 
     <ImageView
-        android:id="@+id/imageView33"
+        android:id="@+id/template8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/template5"
         app:srcCompat="@drawable/addreview_rectangle4" />
 
     <TextView
@@ -304,8 +304,8 @@
         android:text="Wow"
         android:textColor="#212B3F"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView33"
-        app:layout_constraintTop_toTopOf="@+id/imageView33" />
+        app:layout_constraintStart_toStartOf="@+id/template8"
+        app:layout_constraintTop_toTopOf="@+id/template8" />
 
     <Button
         android:id="@+id/addreview_imageview_plus"
@@ -315,10 +315,10 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/addreview_rectangle7"
         android:fontFamily="@font/poppins_bold"
-        android:text="Button"
+        android:text="Submit"
         android:textColor="#212B3F"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView32" />
+        app:layout_constraintTop_toBottomOf="@+id/template7" />
 
     <TextView
         android:id="@+id/textView23"

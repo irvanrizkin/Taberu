@@ -60,7 +60,7 @@
         android:layout_marginStart="162dp"
         android:layout_marginTop="39dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Halo, Irvan!"
+        android:text="Halo, Guest!"
         android:textColor="#1F293B"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"

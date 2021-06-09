@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     Button loginButton;
     TextView registerLink;
     EditText emailText, passwordText;
+    ImageView backImage;
     FirebaseAuth firebaseAuth;
 
     @Override
@@ -38,13 +40,14 @@ public class LoginActivity extends AppCompatActivity {
         registerLink = findViewById(R.id.login_textview_daftar);
         emailText = findViewById(R.id.login_edittext_email);
         passwordText = findViewById(R.id.login_edittext_password);
+        backImage = findViewById(R.id.login_imageview_backbutton);
     }
 
     // On Click
     private void setOnClick() {
         loginButton.setOnClickListener(loginListener);
         registerLink.setOnClickListener(registerIntentListener);
-
+        backImage.setOnClickListener(backIntent);
     }
 
     private View.OnClickListener registerIntentListener = new View.OnClickListener() {
@@ -61,6 +64,13 @@ public class LoginActivity extends AppCompatActivity {
             String password = passwordText.getText().toString();
 
             login(email, password);
+        }
+    };
+
+    private View.OnClickListener backIntent = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
         }
     };
 

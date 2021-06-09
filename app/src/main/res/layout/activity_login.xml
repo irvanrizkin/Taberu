@@ -16,13 +16,12 @@
         app:srcCompat="@drawable/login_rectangle" />
 
     <ImageView
-        android:id="@+id/restaurantdetail_imageview_backbutton"
+        android:id="@+id/login_imageview_backbutton"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginStart="21dp"
         android:layout_marginTop="27.45dp"
         android:clickable="true"
-        android:onClick="pindahsplashactivity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/backbuttonwhite" />

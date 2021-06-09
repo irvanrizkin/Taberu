@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -19,7 +18,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -30,6 +28,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class HomeActivity extends AppCompatActivity {
     ImageView optionsImage;
     TextView userLabel;
+    PopupMenu popupMenu;
     RecyclerView restaurantsRecycler;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
@@ -68,7 +67,11 @@ public class HomeActivity extends AppCompatActivity {
     private View.OnClickListener optionsListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            showLogoutPopUp(v);
+            if (checkLogin()) {
+                showProfilePopUp(v);
+            } else {
+                showLoginPopUp(v);
+            }
         }
     };
 
@@ -79,39 +82,57 @@ public class HomeActivity extends AppCompatActivity {
 
     // Firebase Auth
     public void setDisplayName() {
-        firebaseUser = firebaseAuth.getCurrentUser();
-        String name = firebaseUser.getDisplayName();
+        String name;
+        if (checkLogin()) {
+            firebaseUser = firebaseAuth.getCurrentUser();
+            name = firebaseUser.getDisplayName();
+        } else {
+            name = "Guest";
+        }
         userLabel.setText("Halo, " + name + "!");
     }
 
-    // Pop Up
-    public void showLogoutPopUp(View v) {
+    // Firebase Login Check
+    public Boolean checkLogin() {
+        if (firebaseAuth.getCurrentUser() != null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-        PopupMenu popupMenu = new PopupMenu(this, v);
-        popupMenu.setOnMenuItemClickListener(popupListener);
-        popupMenu.inflate(R.menu.popup_logout);
+    // Pop Up
+    public void showLoginPopUp(View v) {
+        popupMenu = new PopupMenu(this, v);
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                if (item.getItemId() == R.id.menu_login) {
+                    startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+                    return true;
+                }
+                return false;
+            }
+        });
+        popupMenu.inflate(R.menu.popup_login);
         popupMenu.show();
     }
 
-    private PopupMenu.OnMenuItemClickListener popupListener =
-            new PopupMenu.OnMenuItemClickListener() {
-        @Override
-        public boolean onMenuItemClick(MenuItem item) {
-            if (item.getItemId() == R.id.menuitem_logout) {
-                firebaseAuth.signOut();
-                Toast.makeText(getApplicationContext(),
-                        "You're logged out",
-                        Toast.LENGTH_SHORT
-                ).show();
-                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
-                return true;
-            } else if (item.getItemId() == R.id.menuitem_profile) {
-                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
-                return true;
+    public void showProfilePopUp(View v) {
+        popupMenu = new PopupMenu(this, v);
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                if (item.getItemId() == R.id.menu_profile) {
+                    startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
+                    return true;
+                }
+                return false;
             }
-            return false;
-        }
-    };
+        });
+        popupMenu.inflate(R.menu.popup_profile);
+        popupMenu.show();
+    }
 
     // Retrofit Init
     private void initRetrovit() {
