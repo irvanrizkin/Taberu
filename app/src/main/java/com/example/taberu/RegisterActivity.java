@@ -121,7 +121,7 @@ public class RegisterActivity extends AppCompatActivity {
                         "Registration success",
                         Toast.LENGTH_SHORT
                 ).show();
-
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                 intentLogin();
             }
         }
@@ -144,5 +144,9 @@ public class RegisterActivity extends AppCompatActivity {
     // Utility
     public String emailSplitter(String email) {
         return email.substring(0, email.indexOf("@"));
+    }
+    public void pindahloginactivity(View view){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 }

@@ -47,8 +47,8 @@
         android:id="@+id/home_imageview_fotoprofile"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_marginStart="157dp"
         android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_textview_employee"
         app:srcCompat="@drawable/fotoprofil" />
@@ -57,12 +57,12 @@
         android:id="@+id/home_texttview_namautama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
         android:layout_marginTop="39dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Halo, Guest!"
         android:textColor="#1F293B"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,12 +70,12 @@
         android:id="@+id/home_edittext_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="181dp"
         android:layout_marginTop="63dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Level Expert"
         android:textColor="#35445F"
         android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,12 +83,12 @@
         android:id="@+id/home_textview_employee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="189dp"
         android:layout_marginTop="81dp"
         android:fontFamily="@font/poppins"
         android:text="Back End"
         android:textColor="#1F293B"
         android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

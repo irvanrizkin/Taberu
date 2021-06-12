@@ -177,4 +177,8 @@ public class AddreviewActivity extends AppCompatActivity {
             }
         });
     }
+    public void pindahsplashactivity(View view){
+        Intent intent = new Intent(this, splashActivity.class);
+        startActivity(intent);
+    }
 }
