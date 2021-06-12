@@ -92,11 +92,12 @@
         android:id="@+id/profile_textview_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
         android:layout_marginTop="19dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Irvan Rizki Nugraha"
         android:textColor="#1F293B"
+        app:layout_constraintBottom_toTopOf="@+id/profile_textview_level"
+        app:layout_constraintEnd_toEndOf="@+id/profile_imageview_cardkotak"
         app:layout_constraintStart_toStartOf="@+id/profile_imageview_cardkotak"
         app:layout_constraintTop_toTopOf="@+id/profile_imageview_cardkotak" />
 
@@ -104,38 +105,38 @@
         android:id="@+id/profile_textview_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Level Beginner"
         android:textColor="#35445F"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/profile_imageview_cardkotak"
-        app:layout_constraintTop_toBottomOf="@+id/profile_textview_nama" />
+        app:layout_constraintBottom_toTopOf="@+id/profile_textview_status"
+        app:layout_constraintEnd_toEndOf="@+id/profile_imageview_cardkotak"
+        app:layout_constraintStart_toStartOf="@+id/profile_imageview_cardkotak" />
 
     <TextView
         android:id="@+id/profile_textview_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="135dp"
         android:fontFamily="@font/poppins"
         android:text="Backend"
         android:textColor="#1F293B"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/profile_imageview_cardkotak"
-        app:layout_constraintTop_toBottomOf="@+id/profile_textview_level" />
+        app:layout_constraintBottom_toTopOf="@+id/profile_textview_deskripsi"
+        app:layout_constraintEnd_toEndOf="@+id/profile_imageview_cardkotak"
+        app:layout_constraintStart_toStartOf="@+id/profile_imageview_cardkotak" />
 
     <TextView
         android:id="@+id/profile_textview_deskripsi"
         android:layout_width="294dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginBottom="19dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Irvan merupakan seorang yang Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
         android:textAlignment="center"
         android:textSize="9sp"
-        app:layout_constraintStart_toStartOf="@+id/profile_imageview_cardkotak"
-        app:layout_constraintTop_toBottomOf="@+id/profile_textview_status" />
+        app:layout_constraintBottom_toBottomOf="@+id/profile_imageview_cardkotak"
+        app:layout_constraintEnd_toEndOf="@+id/profile_imageview_cardkotak"
+        app:layout_constraintStart_toStartOf="@+id/profile_imageview_cardkotak" />
 
     <ImageView
         android:id="@+id/imageView21"

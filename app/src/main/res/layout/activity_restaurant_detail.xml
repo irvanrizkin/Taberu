@@ -19,6 +19,16 @@
         app:srcCompat="@drawable/restaurantdetail_hiasan1" />
 
     <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="584dp"
+        android:layout_height="434.76dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restaurantdetail_hiasan2" />
+
+    <ImageView
         android:id="@+id/login_imageview_backbutton"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -30,6 +40,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:clickable="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurantdetail_recyclerview_review"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantdetail_textview_review" />
 
     <TextView
         android:id="@+id/restaurantdetail_textview_review"
@@ -45,14 +69,14 @@
         app:layout_constraintTop_toBottomOf="@+id/restaurantdetail_imageview_bigcard" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="584dp"
-        android:layout_height="434.76dp"
-        android:layout_marginTop="508dp"
+        android:id="@+id/restaurantdetail_imageview_plus"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/restaurantdetail_hiasan2" />
+        app:srcCompat="@drawable/restaurantdetail_addreview" />
 
     <ImageView
         android:id="@+id/restaurantdetail_imageview_bigcard"
@@ -140,16 +164,6 @@
         app:layout_constraintStart_toEndOf="@+id/restaurantdetail_imageview_star"
         app:layout_constraintTop_toTopOf="@+id/restaurantdetail_imageview_starbulet" />
 
-    <ImageView
-        android:id="@+id/restaurantdetail_imageview_plus"
-        android:layout_width="138dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="107dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/restaurantdetail_addreview" />
-
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
@@ -171,15 +185,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="@+id/restaurantdetail_imageview_plus"
         app:srcCompat="@drawable/restaurantdetail_plus" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/restaurantdetail_recyclerview_review"
-        android:layout_width="330dp"
-        android:layout_height="107dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/restaurantdetail_textview_review" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

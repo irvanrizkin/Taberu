@@ -147,12 +147,13 @@
         android:layout_width="47dp"
         android:layout_height="18dp"
         android:layout_marginBottom="12dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:clickable="true"
+        android:fontFamily="@font/poppins_medium"
+        android:onClick="pindahregisteractivity"
         android:text="Daftar"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:clickable="true"
-        android:onClick="pindahregisteractivity"
+        android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/login_button_login"
         app:layout_constraintStart_toEndOf="@+id/login_textview_belumpunyaakun" />
 
